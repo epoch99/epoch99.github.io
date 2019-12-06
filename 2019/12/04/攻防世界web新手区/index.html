@@ -37,7 +37,10 @@
 <meta property="og:image" content="http:&#x2F;&#x2F;q1xtiiy5g.bkt.clouddn.com&#x2F;blog&#x2F;20191204&#x2F;sS4Wxu5Jlgh2.png?imageslim">
 <meta property="og:image" content="http:&#x2F;&#x2F;q1xtiiy5g.bkt.clouddn.com&#x2F;blog&#x2F;20191204&#x2F;Rjz7Nkjd2I2H.png?imageslim">
 <meta property="og:image" content="http:&#x2F;&#x2F;q1xtiiy5g.bkt.clouddn.com&#x2F;blog&#x2F;20191204&#x2F;1l4IwIeG06Pf.png?imageslim">
-<meta property="og:updated_time" content="2019-12-04T08:32:43.043Z">
+<meta property="og:image" content="http:&#x2F;&#x2F;q1xtiiy5g.bkt.clouddn.com&#x2F;blog&#x2F;20191206&#x2F;UGEXnrwjg8nb.png?imageslim">
+<meta property="og:image" content="http:&#x2F;&#x2F;q1xtiiy5g.bkt.clouddn.com&#x2F;blog&#x2F;20191206&#x2F;J99PUJPaJjOA.png?imageslim">
+<meta property="og:image" content="http:&#x2F;&#x2F;q1xtiiy5g.bkt.clouddn.com&#x2F;blog&#x2F;20191206&#x2F;zcq1Ak869bmN.png?imageslim">
+<meta property="og:updated_time" content="2019-12-06T09:25:16.622Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="http:&#x2F;&#x2F;q1xtiiy5g.bkt.clouddn.com&#x2F;blog&#x2F;20191204&#x2F;YorUibTpoCQf.png?imageslim">
   
@@ -218,7 +221,7 @@
       <!-- 百度字体平台:http://fontstore.baidu.com/static/editor/index.html -->
       <i class="icon-statistics"></i>
       <span class="post-meta-item-text"> 字数统计:</span>
-      <span class="post-count">727字</span>
+      <span class="post-count">803字</span>
     </span>
   </span>
 
@@ -297,6 +300,15 @@
 <p>然后将其转换成字符。</p>
 <p><img src="http://q1xtiiy5g.bkt.clouddn.com/blog/20191204/1l4IwIeG06Pf.png?imageslim" alt="转字符"></p>
 <p>根据题目提示flag格式尝试输入Cyberpeace{786OsErtk12}正确。</p>
+<blockquote>
+<h4 id="8-xff-referer"><a href="#8-xff-referer" class="headerlink" title="8.xff_referer"></a>8.xff_referer</h4></blockquote>
+<p>题目描述：X老师告诉小宁其实xff和referer是可以伪造的。</p>
+<p><img src="http://q1xtiiy5g.bkt.clouddn.com/blog/20191206/UGEXnrwjg8nb.png?imageslim" alt="题目描述"></p>
+<p>解题:可以看到提示ip地址为123.123.123.123，于是用burp抓包构造X-Froward-For:123.123.123.123</p>
+<p><img src="http://q1xtiiy5g.bkt.clouddn.com/blog/20191206/J99PUJPaJjOA.png?imageslim" alt="hint"></p>
+<p>看到有个网址，想到题目提示referfer于是又构造Referer:<a href="https://www.google.com" target="_blank" rel="noopener">https://www.google.com</a></p>
+<p><img src="http://q1xtiiy5g.bkt.clouddn.com/blog/20191206/zcq1Ak869bmN.png?imageslim" alt="flag"></p>
+<p>得到flag</p>
 
     
 
