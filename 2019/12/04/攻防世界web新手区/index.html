@@ -40,7 +40,16 @@
 <meta property="og:image" content="http:&#x2F;&#x2F;q1xtiiy5g.bkt.clouddn.com&#x2F;blog&#x2F;20191206&#x2F;UGEXnrwjg8nb.png?imageslim">
 <meta property="og:image" content="http:&#x2F;&#x2F;q1xtiiy5g.bkt.clouddn.com&#x2F;blog&#x2F;20191206&#x2F;J99PUJPaJjOA.png?imageslim">
 <meta property="og:image" content="http:&#x2F;&#x2F;q1xtiiy5g.bkt.clouddn.com&#x2F;blog&#x2F;20191206&#x2F;zcq1Ak869bmN.png?imageslim">
-<meta property="og:updated_time" content="2019-12-06T09:25:16.622Z">
+<meta property="og:image" content="http:&#x2F;&#x2F;q1xtiiy5g.bkt.clouddn.com&#x2F;blog&#x2F;20191208&#x2F;xXmhtWJ7mmuK.png?imageslim">
+<meta property="og:image" content="http:&#x2F;&#x2F;q1xtiiy5g.bkt.clouddn.com&#x2F;blog&#x2F;20191208&#x2F;mNfYwRpifTzJ.png?imageslim">
+<meta property="og:image" content="http:&#x2F;&#x2F;q1xtiiy5g.bkt.clouddn.com&#x2F;blog&#x2F;20191208&#x2F;mTPV6cLLQcOo.png?imageslim">
+<meta property="og:image" content="http:&#x2F;&#x2F;q1xtiiy5g.bkt.clouddn.com&#x2F;blog&#x2F;20191208&#x2F;FyBIv3WP4WTy.png?imageslim">
+<meta property="og:image" content="http:&#x2F;&#x2F;q1xtiiy5g.bkt.clouddn.com&#x2F;blog&#x2F;20191208&#x2F;Q8IyiKqzYhmW.png?imageslim">
+<meta property="og:image" content="http:&#x2F;&#x2F;q1xtiiy5g.bkt.clouddn.com&#x2F;blog&#x2F;20191208&#x2F;rri22LihQrEv.png?imageslim">
+<meta property="og:image" content="http:&#x2F;&#x2F;q1xtiiy5g.bkt.clouddn.com&#x2F;blog&#x2F;20191208&#x2F;MxyKfgM80fpk.png?imageslim">
+<meta property="og:image" content="http:&#x2F;&#x2F;q1xtiiy5g.bkt.clouddn.com&#x2F;blog&#x2F;20191208&#x2F;iyBNPl9TzqVC.png?imageslim">
+<meta property="og:image" content="http:&#x2F;&#x2F;q1xtiiy5g.bkt.clouddn.com&#x2F;blog&#x2F;20191208&#x2F;L4p9C366j92A.png?imageslim">
+<meta property="og:updated_time" content="2019-12-08T12:22:29.289Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="http:&#x2F;&#x2F;q1xtiiy5g.bkt.clouddn.com&#x2F;blog&#x2F;20191204&#x2F;YorUibTpoCQf.png?imageslim">
   
@@ -221,7 +230,7 @@
       <!-- 百度字体平台:http://fontstore.baidu.com/static/editor/index.html -->
       <i class="icon-statistics"></i>
       <span class="post-meta-item-text"> 字数统计:</span>
-      <span class="post-count">803字</span>
+      <span class="post-count">972字</span>
     </span>
   </span>
 
@@ -230,7 +239,7 @@
     <span class="post-meta-item-icon">
       <i class="icon-book icon"></i>
       <span class="post-meta-item-text"> 阅读时长≈</span>
-      <span class="post-count">2分</span>
+      <span class="post-count">3分</span>
     </span>
   </span>
 </div>
@@ -309,6 +318,30 @@
 <p>看到有个网址，想到题目提示referfer于是又构造Referer:<a href="https://www.google.com" target="_blank" rel="noopener">https://www.google.com</a></p>
 <p><img src="http://q1xtiiy5g.bkt.clouddn.com/blog/20191206/zcq1Ak869bmN.png?imageslim" alt="flag"></p>
 <p>得到flag</p>
+<blockquote>
+<h4 id="weak-auth"><a href="#weak-auth" class="headerlink" title="weak_auth"></a>weak_auth</h4></blockquote>
+<p>题目描述：小宁写了一个登陆验证页面，随手就设了一个密码。</p>
+<p><img src="http://q1xtiiy5g.bkt.clouddn.com/blog/20191208/xXmhtWJ7mmuK.png?imageslim" alt="题目描述"></p>
+<p>随便输入了用户名和密码之后登录弹出错误信息。</p>
+<p><img src="http://q1xtiiy5g.bkt.clouddn.com/blog/20191208/mNfYwRpifTzJ.png?imageslim" alt="Error"></p>
+<p>可以看到提示用用户admin登录，于是开始爆破。</p>
+<p><img src="http://q1xtiiy5g.bkt.clouddn.com/blog/20191208/mTPV6cLLQcOo.png?imageslim" alt="爆破"></p>
+<p>设置爆破项为password</p>
+<p><img src="http://q1xtiiy5g.bkt.clouddn.com/blog/20191208/FyBIv3WP4WTy.png?imageslim" alt="字典"></p>
+<p>选择字典文件</p>
+<p><img src="http://q1xtiiy5g.bkt.clouddn.com/blog/20191208/Q8IyiKqzYhmW.png?imageslim" alt="爆破结果"></p>
+<p>发现密码123456的length和其他不一样，拿去试试。</p>
+<p><img src="http://q1xtiiy5g.bkt.clouddn.com/blog/20191208/rri22LihQrEv.png?imageslim" alt="flag"></p>
+<p>得到flag值cyberpeace{0757484408801f66c98c89d965144732}</p>
+<blockquote>
+<h4 id="webshell"><a href="#webshell" class="headerlink" title="webshell"></a>webshell</h4></blockquote>
+<p>题目描述：小宁百度了php一句话,觉着很有意思,并且把它放在index.php里。</p>
+<p><img src="http://q1xtiiy5g.bkt.clouddn.com/blog/20191208/MxyKfgM80fpk.png?imageslim" alt="题目"></p>
+<p>看到了webshell，果断打开了菜刀，密码已经给出来了:shell</p>
+<p><img src="http://q1xtiiy5g.bkt.clouddn.com/blog/20191208/iyBNPl9TzqVC.png?imageslim" alt="flag.txt"></p>
+<p>发现目录下有个flag.txt,于是打开看一下</p>
+<p><img src="http://q1xtiiy5g.bkt.clouddn.com/blog/20191208/L4p9C366j92A.png?imageslim" alt="flag"></p>
+<p>得到flag值cyberpeace{423e47ce2b0d177773267e67ec8c8c25}</p>
 
     
 
